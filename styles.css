@@ -1,0 +1,85 @@
+body{
+    background: rgb(12,93,110);
+    background: linear-gradient(90deg, rgba(12,93,110,1) 0%, rgba(12,74,87,1) 50%, rgba(12,93,110,1) 100%);
+    font-family: 'Lucida Sans';
+    color: aliceblue;
+}
+
+body {
+	background: linear-gradient(-45deg, #21388d, #0d4b71, #116285, #21388d);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+main{
+    width: 730px;
+    margin: 100px auto 70px;
+    display: flex;
+    align-items: center;
+}
+
+.section1{
+    background-color: rgba(255,255,255,0.2);
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    height: 135px;
+    width: 135px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+.section2{
+    background-color: rgba(255,255,255,0.2);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 250px;
+    height: 400px;
+    padding: 0 40px;
+}
+
+.estadisticas{
+    border: 1px solid white;
+    height: 105px;
+    width: 245px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+footer{
+   text-align: center; 
+}
+a{
+    text-decoration: none;
+    color: rgb(72, 140, 200);
+}
+
+img{
+    width: 80%;
+}
