@@ -79,11 +79,11 @@ function destapar(id){
 
             //Aumentar aciertos
             aciertos++;
-            mostrarAciertos.innerHTML = `Aciertos: ${aciertos}`
+            mostrarAciertos.innerHTML = `Aciertos: ${aciertos}/8`
 
             if(aciertos == 8){
                 clearInterval(tiempoRegrasivoId);
-                mostrarAciertos.innerHTML = `Aciertos: ${aciertos}✨`
+                mostrarAciertos.innerHTML = `Aciertos: ${aciertos}/8✨`
                 mostrarTiempo.innerHTML = `Felicitaciones! Tardaste ${timerInicio - timer} segundos`
                 mostrarMovs.innerHTML = `Movimientos: ${movimientos}😎`
             }
