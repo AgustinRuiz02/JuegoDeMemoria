@@ -42,7 +42,7 @@ h1{
     text-align: center;
 }
 
-button{
+.botones{
     height: 130px;
     width: 130px;
     font-size: 40px;
@@ -59,7 +59,7 @@ button:hover{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     width: 250px;
-    height: 400px;
+    height: 475px;
     padding: 0 40px;
 }
 
@@ -72,12 +72,27 @@ button:hover{
     box-sizing: border-box;
 }
 
+
+
+.reiniciar{
+    text-align: center;
+    height: 60px;
+    width: 150px;
+    margin-left: 50.5px;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
 footer{
    text-align: center; 
 }
 a{
     text-decoration: none;
-    color: rgb(72, 140, 200);
+    color: rgb(153, 208, 255);
 }
 
 img{
