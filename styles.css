@@ -36,6 +36,7 @@ main{
     background-color: rgba(255,255,255,0.2);
     padding: 0 10px 10px 10px;
     border-radius: 8px;
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.1);
 }
 
 h1{
@@ -48,7 +49,15 @@ h1{
     font-size: 40px;
     color: white;
     font-weight: bold;
+    transition: .25s;
+    background-color: rgba(209, 209, 209, 0.613);
+    border-color: #0f4258;
 }
+
+.botones:hover{
+    transform: scale(1.025);
+}
+
 button:hover{
     cursor: pointer;
 }
@@ -61,6 +70,7 @@ button:hover{
     width: 250px;
     height: 475px;
     padding: 0 40px;
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.1);
 }
 
 .estadisticas{
@@ -97,4 +107,30 @@ a{
 
 img{
     width: 80%;
+}
+
+.iconos{
+    margin-right: 10px;
+}
+
+#icon1{
+    width: 50px;
+    height: 50px;
+    transition: .5s;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+#icon1:hover{
+    transform: scale(1.15);
+}
+
+#icon2{
+    width: 50px;
+    height: 50px;
+    transition: .5s;
+    border: 0px solid black;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+#icon2:hover{
+    transform: scale(1.15);
 }
