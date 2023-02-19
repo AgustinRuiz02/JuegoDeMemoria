@@ -10,6 +10,7 @@ body {
 	background-size: 400% 400%;
 	animation: gradient 8.5s ease infinite;
 	height: 100vh;
+    cursor: url(media/mouse/default.png), auto;
 }
 
 @keyframes gradient {
@@ -27,7 +28,7 @@ body {
 
 main{
     width: 730px;
-    margin: 100px auto 70px;
+    margin: 50px auto 75px;
     display: flex;
     align-items: center;
 }
@@ -35,8 +36,9 @@ main{
 .section1{
     background-color: rgba(255,255,255,0.2);
     padding: 0 10px 10px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: -15px 5px 75px rgba(0, 0, 0, 0.25);
 }
 
 h1{
@@ -52,14 +54,15 @@ h1{
     transition: .25s;
     background-color: rgba(209, 209, 209, 0.613);
     border-color: #0f4258;
+    cursor: url(media/mouse/click.png), auto;
 }
 
 .botones:hover{
-    transform: scale(1.025);
+    transform: scale(1.030);
 }
 
 button:hover{
-    cursor: pointer;
+    cursor: url(media/mouse/click.png), auto;
 }
 
 
@@ -70,7 +73,9 @@ button:hover{
     width: 250px;
     height: 475px;
     padding: 0 40px;
-    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.175);
+
 }
 
 .estadisticas{
@@ -105,12 +110,16 @@ a{
     color: rgb(153, 208, 255);
 }
 
+footer p{
+    font-size: large;
+}
+
 img{
     width: 80%;
 }
 
 .iconos{
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 #icon1{
@@ -118,18 +127,19 @@ img{
     height: 50px;
     transition: .5s;
     border-radius: 50%;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
 }
 #icon1:hover{
     transform: scale(1.15);
 }
 
 #icon2{
-    width: 50px;
-    height: 50px;
+    width: 47.5px;
+    height: 47.5px;
     transition: .5s;
     border: 0px solid black;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
 #icon2:hover{
     transform: scale(1.15);
