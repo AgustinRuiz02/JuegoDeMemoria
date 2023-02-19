@@ -1,16 +1,19 @@
-body{
-    background: rgb(12,93,110);
-    background: linear-gradient(90deg, rgba(12,93,110,1) 0%, rgba(12,74,87,1) 50%, rgba(12,93,110,1) 100%);
-    font-family: 'Lucida Sans';
-    color: aliceblue;
+/*::-webkit-scrollbar{
+    display: none;
 }
+
+*{
+    border: solid red;
+}*/
 
 body {
 	background: linear-gradient(-45deg, #1c3076, #116285, #116285, #1c3076);
 	background-size: 400% 400%;
 	animation: gradient 8.5s ease infinite;
-	height: 100vh;
+    font-family: 'Lucida Sans';
+    color: aliceblue;
     cursor: url(media/mouse/default.png), auto;
+    
 }
 
 @keyframes gradient {
@@ -27,8 +30,8 @@ body {
 
 
 main{
-    width: 730px;
-    margin: 50px auto 75px;
+    width: 740px;
+    margin: 65px auto 75px;
     display: flex;
     align-items: center;
 }
@@ -120,6 +123,7 @@ img{
 
 .iconos{
     margin-right: 15px;
+    cursor: url(media/mouse/click.png), auto;
 }
 
 #icon1{
