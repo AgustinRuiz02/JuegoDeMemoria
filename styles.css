@@ -54,12 +54,17 @@ h1{
     width: 130px;
     font-size: 40px;
     color: white;
-    font-weight: bold;
+    background-color: #dcdcdc;
     transition: .25s;
-    background-color: rgba(209, 209, 209, 0.613);
     border-color: #0f4258;
     cursor: url(media/mouse/click.png), auto;
 }
+
+.botones:active{
+    background-color: #747474;
+}
+
+
 
 .botones:hover{
     transform: scale(1.030);
