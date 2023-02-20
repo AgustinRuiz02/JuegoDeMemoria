@@ -1,10 +1,11 @@
 /*::-webkit-scrollbar{
     display: none;
-}
+}*/
 
 *{
-    border: solid red;
-}*/
+    /*border: solid red;*/
+    cursor: url(media/mouse/default.png), auto; 
+}
 
 body {
     background: linear-gradient(-45deg, rgb(55, 32, 98) 0%, rgba(12,68,102,1) 33%, rgba(55,32,98) 66%, rgba(12,68,102,1) 100%);
@@ -133,6 +134,7 @@ img{
     border-radius: 50%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
     margin-top: 10px;
+    cursor: url(media/mouse/click.png), auto;
 }
 #icon1:hover{
     transform: scale(1.15);
@@ -144,6 +146,7 @@ img{
     transition: .5s;
     border: 0px solid black;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    cursor: url(media/mouse/click.png), auto;
 }
 #icon2:hover{
     transform: scale(1.15);
