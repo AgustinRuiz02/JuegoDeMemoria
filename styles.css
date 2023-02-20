@@ -7,9 +7,9 @@
 }*/
 
 body {
-	background: linear-gradient(-45deg, #1c3076, #116285, #116285, #1c3076);
-	background-size: 400% 400%;
-	animation: gradient 8.5s ease infinite;
+    background: linear-gradient(-45deg, rgb(55, 32, 98) 0%, rgba(12,68,102,1) 33%, rgba(55,32,98) 66%, rgba(12,68,102,1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     font-family: 'Lucida Sans';
     color: aliceblue;
     cursor: url(media/mouse/default.png), auto;
@@ -30,8 +30,8 @@ body {
 
 
 main{
-    width: 740px;
-    margin: 65px auto 75px;
+    width: 800px;
+    margin: 70px auto 75px;
     display: flex;
     align-items: center;
 }
