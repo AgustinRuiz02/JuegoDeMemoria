@@ -96,6 +96,10 @@ function destapar(id){
                 tarjeta1.disabled = false
                 tarjeta2.disabled = false
                 tarjetasdestapadas = 0;
+                if(timer==0){
+                    clearInterval(tiempoRegrasivoId);
+                    bloquearTarjetas();
+                }
             },800);
         }
     }
