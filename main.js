@@ -7,14 +7,15 @@ let segundoResultado = null;
 let movimientos = 0;
 let aciertos = 0;
 let temporizador = false;
-let timer = 30;
-let timerInicio = 30;
+let timer = 3;
+let timerInicio = 3;
 let tiempoRegrasivoId = null;
 
 //Ids html
 let mostrarMovs = document.getElementById("movimientos");
 let mostrarAciertos = document.getElementById("aciertos");
 let mostrarTiempo = document.getElementById("tiempor");
+let body = document.querySelector("body");
 
 // Numeros aleatorios
 let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
@@ -30,6 +31,7 @@ function contarTiempo(){
             clearInterval(tiempoRegrasivoId);
             bloquearTarjetas();
             mostrarTiempo.innerHTML = `Tiempo finalizado 💀`
+            document.body.classList.toggle("dark")
         }
     },1000)
 }
