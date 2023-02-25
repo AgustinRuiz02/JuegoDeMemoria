@@ -18,6 +18,13 @@ let mostrarTiempo = document.getElementById("tiempor");
 let body = document.querySelector("body");
 
 // Numeros aleatorios
+
+// Carpeta Aleatoria
+let carpeta = [0,1]
+carpeta = carpeta.sort(()=>{return Math.random()-0.5})
+//console.log(carpeta);
+
+// Imagen Aleatoria
 let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
 numeros = numeros.sort(()=>{return Math.random()-0.5})
 //console.log(numeros);
@@ -62,14 +69,25 @@ function destapar(id){
         //mostrar primer numero
         tarjeta1 = document.getElementById(id);
         primerResultado = numeros[id];
-        tarjeta1.innerHTML = `<img src="images/${primerResultado}.png" alt="">`;
+        if(carpeta[0] == 0){
+            tarjeta1.innerHTML = `<img src="images/0/${primerResultado}.png" alt="">`;
+        }
+        else{
+            tarjeta1.innerHTML = `<img src="images/1/${primerResultado}.png" alt="">`;
+        }
+        
         //Deshabilitar primer boton
         tarjeta1.disabled = true;
     }else if(tarjetasdestapadas == 2){
         // Mostrar segundo numero
         tarjeta2 = document.getElementById(id);
         segundoResultado = numeros[id];
-        tarjeta2.innerHTML = `<img src="images/${segundoResultado}.png" alt="">`;
+        if(carpeta[0] == 0){
+            tarjeta2.innerHTML = `<img src="images/0/${segundoResultado}.png" alt="">`;
+        }
+        else{
+            tarjeta2.innerHTML = `<img src="images/1/${segundoResultado}.png" alt="">`;
+        }
         tarjeta2.disabled = true;
 
         //Incrementar movimientos
