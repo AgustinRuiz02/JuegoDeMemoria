@@ -45,10 +45,17 @@ body {
 
 main{
     width: 800px;
-    margin: 70px auto 75px;
+    margin: 50px auto 75px;
     display: flex;
     align-items: center;
 }
+
+.tablero {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 
 .section1{
     background-color: rgba(255,255,255,0.2);
@@ -67,11 +74,11 @@ h1{
 }
 
 .botones{
-    height: 130px;
-    width: 130px;
+    height: 135px;
+    width: 135px;
     font-size: 40px;
     color: white;
-    background-color: #dcdcdc;
+    background-color: #c2c2c2;
     transition: .25s;
     border-color: #0f4258;
     cursor: url(media/mouse/click.png), auto;
