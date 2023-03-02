@@ -16,6 +16,7 @@ let mostrarMovs = document.getElementById("movimientos");
 let mostrarAciertos = document.getElementById("aciertos");
 let mostrarTiempo = document.getElementById("tiempor");
 let body = document.querySelector("body");
+let dificultad = document.querySelector("select");
 
 // Numeros aleatorios
 
@@ -41,6 +42,7 @@ function contarTiempo(){
             document.body.classList.toggle("dark")
         }
     },1000)
+    document.querySelector("select").disabled = true;
 }
 
 function bloquearTarjetas(){
@@ -124,3 +126,28 @@ function destapar(id){
         }
     }
 }
+
+dificultad.addEventListener("change",()=>{
+    valorSelect = document.querySelector("select").value;
+
+    console.log(valorSelect)
+    switch(valorSelect){
+
+        case "0":
+            timer = 30
+            timerInicio = 30
+        break;
+
+        case "1":
+            timer = 20
+            timerInicio = 20
+        break;
+
+        case "2":
+            timer = 10
+            timerInicio = 10
+        break;
+    }
+    console.log(timer);
+    mostrarTiempo.innerHTML = `Tiempo: ${timer} segundos`;
+})
