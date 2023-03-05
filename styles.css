@@ -5,6 +5,7 @@
 *{
     /*border: solid red;*/
     cursor: url(media/mouse/default.png), auto; 
+    user-select: none;
 }
 
 @font-face {
